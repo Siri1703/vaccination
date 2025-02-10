@@ -1,0 +1,31 @@
+{
+  "name": "vaccination",
+  "version": "1.0.0",
+  "description": "Vaccination Backend",
+  "main": "index.js",
+ "scripts": {
+    "dev": "nodemon --watch './' --ext 'ts' --exec 'ts-node' app.ts",
+    "generate-data": "ts-node generate-test-data.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "mongoose": "^8.10.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/node": "^22.13.1",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+  
+    "tsconfig-paths": "^3.9.0"
+  }
+}
