@@ -17,7 +17,7 @@ app.use(express.json());
 
 export const connectToDatabase = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI!, {
+    await mongoose.connect("mongodb+srv://siri:siri@vaccinecluster.xvmxl.mongodb.net/?retryWrites=true&w=majority&appName=VaccineCluster"!, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       serverSelectionTimeoutMS: 5000,  // Timeout after 5 seconds
